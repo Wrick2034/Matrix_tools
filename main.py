@@ -9,6 +9,7 @@ for i in range(n):
         num = int(input(f"Enter element {j+1} of row {i+1}: "))
         A[i]+=[num]
 print_matrix(A,n)
+
 if det(A,n)==0:
     raise ValueError("Invertible Matrix cannot have determinant 0")
 else:

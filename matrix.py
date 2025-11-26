@@ -54,3 +54,10 @@ def print_matrix(A,n):
             print(f"{A[i][j]:0.2f}",end="  ")
         print()
     print()
+
+
+
+# Jordan Canonical Form
+# SVG
+# Cholensky Decomposition
+# Gram Schmidt Orthonormalization
