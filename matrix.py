@@ -61,3 +61,17 @@ def print_matrix(A,n):
 # SVG
 # Cholensky Decomposition
 # Gram Schmidt Orthonormalization
+def multiply(A,B,m,n):
+    if m==n:
+        C = []
+        for i in range(m):
+            C+=[[]]
+            for j in range(m):
+                sum=0
+                for k in range(m):
+                    sum+=A[i][k]*B[k][j]
+                C[i].append(sum)
+        return C
+    else : 
+        raise ValueError("Has to be square matrix!!!")
+    
