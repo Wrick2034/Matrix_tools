@@ -10,6 +10,7 @@ for i in range(n):
         A[i]+=[num]
 print_matrix(A,n)
 
+# Cannot Calculate inverse if it has a determinant of 0
 if det(A,n)==0:
     raise ValueError("Invertible Matrix cannot have determinant 0")
 else:
